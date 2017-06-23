@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: source
+    destination: /myApp
+hooks:
+  BeforeInstall:
+  AfterInstall:
+  ApplicationStart:
+    - location: start.sh
+      timeout: 3600
+  ValidateService:

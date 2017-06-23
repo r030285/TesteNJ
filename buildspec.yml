@@ -17,5 +17,3 @@ phases:
 artifacts:
   files:
     - index.js
-  discard-paths: yes
-  base-directory: location

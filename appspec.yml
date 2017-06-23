@@ -4,9 +4,6 @@ files:
   - source: source
     destination: /tmp/
 hooks:
-  BeforeInstall:
-  AfterInstall:
   ApplicationStart:
     - location: start.sh
       timeout: 3600
-  ValidateService:

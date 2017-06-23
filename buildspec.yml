@@ -1,0 +1,21 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    variavel: "teste deploy"
+
+phases:
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - echo BUILD
+  post_build:
+    commands:
+      - echo DONE
+artifacts:
+  files:
+    - index.js
+  discard-paths: yes
+  base-directory: location

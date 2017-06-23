@@ -4,6 +4,11 @@ files:
   - source: ./
     destination: ./
 hooks:
+ApplicationStop:
+   - location: killall node
+     timeout: 10
+     runas: ubuntu
   ApplicationStart:
     - location: start.sh
-      timeout: 3600
+      timeout: 6
+      runas: ubuntu

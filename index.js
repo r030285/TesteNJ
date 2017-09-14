@@ -9,7 +9,7 @@ app.get("/teste", function(req, res){
 });
 
 var method = function(v1){
-    return v1+2;
+    return v1+1;
 }
 
 exports.method = method;

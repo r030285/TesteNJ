@@ -4,9 +4,10 @@ phases:
   install:
     commands:
       - npm install
+      - sudo npm install -g mocha
   pre_build:
     commands:
-      - mocha 
+      - mocha
       - sudo rm -r node_modules
   build:
     commands:

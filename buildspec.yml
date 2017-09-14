@@ -1,20 +1,17 @@
 version: 0.1
 
-environment_variables:
-  plaintext:
-    variavel: "teste deploy"
-
 phases:
-  pre_build:
+  install:
     commands:
       - npm install
+  pre_build:
+    commands:
+      - mocha 
+      - sudo rm -r node_modules
   build:
     commands:
       - echo BUILD
+      - npm install --production
   post_build:
     commands:
       - echo DONE
-artifacts:
-  files:
-    - index.js
-    - start.sh

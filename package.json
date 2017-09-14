@@ -18,5 +18,8 @@
   "homepage": "https://github.com/r030285/TesteNJ#readme",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
   }
 }
